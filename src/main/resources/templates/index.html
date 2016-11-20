@@ -1,11 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>Title</title>
     <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
     <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="guru.css" media="screen">
+    <!--<link rel="stylesheet" type="text/css" href="guru.css" media="screen"/>-->
+    <style>
+        .jumbotron {
+            background: url('https://d2vvqscadf4c1f.cloudfront.net/rGIBmJUAT46UuLPwXo3K_Fedora_Core_Ultimate2.jpg') no-repeat center center;
+            height: 350px;
+            color: white;
+            text-shadow: #444 0 1px 1px;
+        }
+
+        body {
+            color: #2b3636;
+            font-family: "Proxima";
+        }
+
+        body {
+            color: #333;
+            font-family: "Hevletika Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.42857;
+        }
+
+        .row {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+
+        *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        .view-directory .course-listing {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .course-listing {
+            background-color: #f7f7f7;
+            border: 1px solid #f1f3f0;
+            border-radius: 9px;
+            box-shadow: 0 1px #f1f3f0;
+            cursor: pointer;
+            height: 390px;
+            margin-bottom: 50px;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .course-listing .course-box-image-container .course-box-image {
+            border-bottom: 1px solid #ededed;
+            border-top-left-radius: 9px;
+            border-top-right-radius: 9px;
+            display: block;
+            margin: auto;
+            width: 100%;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        img {
+            border: 0 none;
+        }
+
+        .course-listing .course-listing-title {
+            color: #6cb44a;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 25px;
+            max-height: 70px;
+            overflow: hidden;
+            padding: 16px 16px 4px;
+        }
+
+        .course-listing .course-listing-subtitle {
+            color: #586f6f;
+            font-size: 14px;
+            font-weight: 200;
+            max-height: 65px;
+            overflow: hidden;
+            padding: 5px 16px;
+        }
+
+        .course-listing .course-listing-extra-info .course-price {
+            color: #6eae50 !important;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 34px;
+            padding-right: 10px;
+            text-align: right;
+        }
+
+        .course-listing .course-listing-extra-info .course-author-name {
+            font-size: 15px;
+            font-weight: 200;
+            line-height: 30px;
+            max-height: 30px;
+            overflow: hidden;
+            padding-left: 5px;
+        }
+
+        .course-listing .course-listing-extra-info .course-bundle {
+            font-size: 15px;
+            font-weight: 200;
+            line-height: 30px;
+        }
+    </style>
 </head>
 <body>
 <div class="jumbotron">
@@ -25,12 +137,12 @@
         <div class="col-md-4">
             <div class="course-listing">
                 <div class="row">
-                    <a href="../templates/courses/product.html">
+                    <a href="product.html">
                         <div class="col-lg-12">
                             <div class="course-box-image-container">
                                 <img src="//d6xfpzo6h49n1.cloudfront.net/BXwTFNXDD4SjVt6H78-It1YgNj8=/fit-in/705x0/https://d2vvqscadf4c1f.cloudfront.net/scgeIJ9wRGGNWvK0jAld_ThumbFREE_01.png"
                                      role="presentation"
-                                     class="course-box-image">
+                                     class="course-box-image"/>
                             </div>
                             <div class="course-listing-title">
                                 Introduction to Spring
@@ -66,7 +178,7 @@
                             <div class="course-box-image-container">
                                 <img src="//d6xfpzo6h49n1.cloudfront.net/xmIEDF_cDxZz4E2mLiV5N52_yPo=/fit-in/705x0/https://d2vvqscadf4c1f.cloudfront.net/YnsFJMclS5aYmtiAMSX0_ThumbSPRINcore.png"
                                      role="presentation"
-                                     class="course-box-image">
+                                     class="course-box-image"/>
                             </div>
                             <div class="course-listing-title">
                                 Spring Core
@@ -102,7 +214,7 @@
                             <div class="course-box-image-container">
                                 <img src="//d6xfpzo6h49n1.cloudfront.net/VcMKL8A-nGdHEgrHRy5bPuqFhtU=/fit-in/705x0/https://d2vvqscadf4c1f.cloudfront.net/fMahox0zTOW4gYkMMjmN_ThumbSPRINcoreAdv.png"
                                      role="presentation"
-                                     class="course-box-image">
+                                     class="course-box-image"/>
                             </div>
                             <div class="course-listing-title">
                                 Spring Core Advanced
@@ -138,7 +250,7 @@
                             <div class="course-box-image-container">
                                 <img src="//d6xfpzo6h49n1.cloudfront.net/havoSEQtjJGIEwft0YRVdR1Tjoo=/fit-in/705x0/https://www.filepicker.io/api/file/HnVU5adRZxeFT99yybqw"
                                      role="presentation"
-                                     class="course-box-image">
+                                     class="course-box-image"/>
                             </div>
                             <div class="course-listing-title">
                                 Spring Core Dev Ops
@@ -174,7 +286,7 @@
                             <div class="course-box-image-container">
                                 <img src="//d6xfpzo6h49n1.cloudfront.net/iM6y2WkaU8PWBuGAHtA3OKqT-4A=/fit-in/705x0/https://d2vvqscadf4c1f.cloudfront.net/DkBQKd4WQxWTCLnFwJCR_ThumbSPRINcoreUltimate.png"
                                      role="presentation"
-                                     class="course-box-image">
+                                     class="course-box-image"/>
                             </div>
                             <div class="course-listing-title">
                                 Spring Core Ultimate
@@ -207,7 +319,7 @@
                             <div class="course-box-image-container">
                                 <img src="//d6xfpzo6h49n1.cloudfront.net/wH-V7RfYswB8Q95LIdGzx-QLxKk=/fit-in/705x0/https://d2vvqscadf4c1f.cloudfront.net/J8mqML4lQRmUmM4gdCW0_Thumb_Thymeleaf.png"
                                      role="presentation"
-                                     class="course-box-image">
+                                     class="course-box-image"/>
                             </div>
                             <div class="course-listing-title">
                                 Mastering Thymeleaf
