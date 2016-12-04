@@ -122,7 +122,7 @@
     </style>
 </head>
 <body>
-<div class="jumbotron">
+<div class="jumbotron" th:replace="fragments/jumbotron :: jumbotron">
     <div class="container">
         <h1>Spring Framework Guru</h1>
         <p class="lead" th:text="#{index.page.tagline}">Tag line</p>
@@ -135,11 +135,23 @@
             <h1 th:text="#{index.page.headline}">Courses Headline</h1>
         </div>
     </div>
-    <div class="row course-list list">
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        <tr th:each="product : ${products}">
+            <td th:text="${product.id}"></td>
+            <td th:text="${product.courseName}"></td>
+        </tr>
+    </table>
+
+    <div class="row course-list list" th:remove="all">
         <div class="col-md-4">
             <div class="course-listing">
                 <div class="row">
-                    <a href="product.html">
+                    <a href="/product/1">
                         <div class="col-lg-12">
                             <div class="course-box-image-container">
                                 <img th:src="@{images/SpringIntroThumb.png}"
@@ -176,7 +188,7 @@
         <div class="col-md-4">
             <div class="course-listing">
                 <div class="row">
-                    <a href="product.html">
+                    <a href="/product/2">
                         <div class="col-lg-12">
                             <div class="course-box-image-container">
                                 <img th:src="@{images/SpringCoreThumb.png}"
@@ -213,7 +225,7 @@
         <div class="col-md-4">
             <div class="course-listing">
                 <div class="row">
-                    <a href="product.html">
+                    <a href="/product/3">
                         <div class="col-lg-12">
                             <div class="course-box-image-container">
                                 <img th:src="@{images/SpringCoreAdvancedThumb.png}"
@@ -250,7 +262,7 @@
         <div class="col-md-4">
             <div class="course-listing">
                 <div class="row">
-                    <a href="product.html">
+                    <a href="/product/4">
                         <div class="col-lg-12">
                             <div class="course-box-image-container">
                                 <img th:src="@{images/SpringCoreDevOpsThumb.png}"
@@ -287,7 +299,7 @@
         <div class="col-md-4">
             <div class="course-listing">
                 <div class="row">
-                    <a href="product.html">
+                    <a href="/product/5">
                         <div class="col-lg-12">
                             <div class="course-box-image-container">
                                 <img th:src="@{images/SpringCoreUltimateThumb.png}"
@@ -320,7 +332,7 @@
         <div class="col-md-4">
             <div class="course-listing">
                 <div class="row">
-                    <a href="product.html">
+                    <a href="/product/6">
                         <div class="col-lg-12">
                             <div class="course-box-image-container">
                                 <img th:src="@{images/ThymeleafThumb.png}"
@@ -355,7 +367,9 @@
             </div>
         </div>
     </div>
-
+    <div class="container" th:replace="fragments/footer :: footer">
+        <P>footer</P>
+    </div>
 </div>
 
 </body>
